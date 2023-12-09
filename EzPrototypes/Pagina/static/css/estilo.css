@@ -1,3 +1,64 @@
 .fondo{
     background-image: url('../img/fondo.jpg');
 }
+
+.dos_fondo{
+    background-image: url('../img/fondo_info.png');
+}
+
+.fondo-beige {
+    background-color: #f4f1e5; 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow:hidden;
+}
+
+.Rastro{
+    background-color: black;
+    border-radius: 20%;
+    margin-top: 50px;
+    border-color: black;
+    border-style: solid;
+    color: white;
+}
+
+.Pantalla{
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20%;
+}
+
+.separacion{
+    display: flex;
+}
+
+.zoom-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.zoom-img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-img.zoomed {
+    transform: scale(1); /* Puedes ajustar el nivel de zoom según tus preferencias */
+}
+
+.zoom-img.disappear {
+    display: none;
+}
+
+.zoom-container-1 {
+    overflow: hidden;
+    position: relative;
+}
+
+.zoom-container-2 {
+    overflow: hidden;
+    position: relative;
+}
+.zoom-container-3 {
+    overflow: hidden;
+    position: relative;
+}

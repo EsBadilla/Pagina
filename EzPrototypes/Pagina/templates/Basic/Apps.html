@@ -1,8 +1,86 @@
 {% extends 'Basic/base.html' %}
 {% load static %}
 
+
 {% block contenido %}
-    <div class="container fondo">
-        Apps
+    <div class="fondo-beige">
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-center">
+                <!-- Contenido de la primera columna -->
+                <br>
+                
+                <h2 style="font-weight: bold;">RegistrApp</h2>
+                <p>
+                    Version 2.1.0 <br>
+                    Ultima actualizacion <br>
+                    08/12/2023
+                  </p>
+                  
+                <img src="{% static 'img/Regist.png' %}" alt="Qr" style="width: 30%; border-radius: 20%;"><br><br>
+                <div id="Boton" style="display: none;">
+                    <a href="https://cdn.discordapp.com/attachments/992169590379532388/1182797341686780066/RegistrApp.apk?ex=658600dd&is=65738bdd&hm=4f2a944c50e951eb2537bd9c8c24be67affae5dc33f9f2f8b1afab0a48005cb8&" class="btn btn-primary">Descargar Aqui <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </a>
+                </div>
+                <br>
+                <div id="Foto" style="display: none;">
+                    <img src="{% static 'img/Installer.png' %}" alt="Qr" width="30%">
+                    <h5>Escanea para descargar</h5>
+                </div>
+                <br><br><br><br>
+
+                <h2>Funciones</h2>
+                <br>
+            </div>
+                <div>
+                    <ul class="text-center">
+                        <li>Ingreso a la App con credenciales</li>
+                        <li>Despliegue de cámara para leer Código QR</li>
+                        <li>Sistema de registro de asistencia basado en Firebase</li>
+                        <li>Sistema de reseteo de contraseña segura</li>
+                        <li>Consumo de api-rest: Rick and Morty</li>
+                    </ul>
+                    <br>
+                </div>    
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="Rastro">
+                <!-- Contenido de la 2 columna -->
+                <br>
+                <h2>Galeria</h2>
+                <div class="Pantalla">
+                    <br>
+                    <div class="separacion">
+                        <div class="zoom-container">
+                            <img src="{% static 'img/Prueba1.jpg' %}" alt="Inicio" style="width: 50%;" id="zoom-img-1" class="zoom-img">
+                        </div>
+                        <div class="zoom-container-1">
+                            <img src="{% static 'img/Prueba2.jpg' %}" alt="Registro" style="width: 50%;" id="zoom-img-2" class="zoom-img">
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="separacion">
+                        <div class="zoom-container-2">
+                            <img src="{% static 'img/Prueba4.jpg' %}" alt="Restablecer" style="width: 50%;" id="zoom-img-3" class="zoom-img">
+                        </div>
+                        <div class="zoom-container-3">
+                            <img src="{% static 'img/Prueba3.jpg' %}" alt="Api-rest" style="width: 50%;" id="zoom-img-4" class="zoom-img">
+                        </div>
+                </div>
+                <br>
+            </div><br>
+            </div>
+                <br><br><br>
+            </div>
+        </div>
+    
     </div>
+
+
+</div>
+
+<script src="../../static/js/Revision.js"></script>
 {% endblock %}
